@@ -1,0 +1,41 @@
+### Query Software Update Status
+
+GET http://{{soundtouch}}:8090/swUpdateQuery
+
+#<?xml version="1.0" encoding="UTF-8" ?>
+#<swUpdateQueryResponse deviceID="7C38665D7F65">
+#    <state>IDLE</state>
+#    <percentComplete>0</percentComplete>
+#    <canAbort>false</canAbort>
+#</swUpdateQueryResponse>
+
+#<?xml version="1.0" encoding="UTF-8" ?>
+#<swUpdateQueryResponse deviceID="7C38665D7F65">
+#    <state>DOWNLOADING</state>
+#    <percentComplete>7</percentComplete>
+#    <canAbort>true</canAbort>
+#</swUpdateQueryResponse>
+
+### Check if software update is available
+# Device: SoundTouch 10, 20.0.6.44144.3075410
+
+GET http://{{soundtouch}}:8090/swUpdateCheck
+
+# <?xml version="1.0" encoding="UTF-8" ?>
+# <swUpdateCheckResponse deviceID="7C38665D7F65" indexFileUrl="http://soundcork:9000/updates/soundtouch">
+#    <release revision="27.0.6.46330.5043500"/>
+# </swUpdateCheckResponse>
+
+### Start Software Update
+
+GET http://{{soundtouch}}:8090/swUpdateStart#
+
+# <?xml version="1.0" encoding="UTF-8" ?>
+# <status>/swUpdateStart</status>
+
+### Abort Software Update
+
+GET http://{{soundtouch}}:8090/swUpdateAbort
+
+#<?xml version="1.0" encoding="UTF-8" ?>
+#<status>/swUpdateAbort</status>
