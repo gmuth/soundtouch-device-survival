@@ -4,7 +4,7 @@ This repo is for documentation, tools and hacks related to the Bose Soundtouch d
 
 TODO:
 
-- Document how to gain root access
+- Document how to gain root access [ST300 special](https://github.com/deborahgu/soundcork/issues/116)
 - Document how to save your device config
 - Document [play_info hack](https://github.com/deborahgu/soundcork/issues/104)
 - Explain how to manually pair ST10s for stereo mode
