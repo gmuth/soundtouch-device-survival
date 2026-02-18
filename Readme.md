@@ -1,6 +1,8 @@
 ###
 
 This repo is for documentation, tools and hacks related to the Bose Soundtouch devices.
+While [Soundcorks](https://github.com/deborahgu/soundcork) goal is to implement the Bose
+cloud APIs this projects focus is the device itself including its APIs, config files and internal tools.
 
 TODO:
 
